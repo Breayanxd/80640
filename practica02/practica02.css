@@ -1,0 +1,42 @@
+*{
+    margin: 0;   
+    padding: 0;
+}
+
+#sp2{
+    color: red;
+}
+
+#sp1{
+    /* margin: 100px;
+    padding: 100px; */
+    color: black;
+}
+
+p span {
+    color: blueviolet;
+}
+
+
+.fuente{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+span::after{
+    content: '\A''\A'; white-space: pre;
+}
+
+#txt1, #txt2{
+    color: black;
+    font-family: cursive;
+    font-size: medium;
+}
+
+h1::before{
+    content: url(balon.png)
+}
+
+#txt1::after, #txt2::after{
+    content: url(jugador.png);
+}
+
