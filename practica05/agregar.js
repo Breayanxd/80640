@@ -1,9 +1,6 @@
-
-
 function leer() {
     return document.getElementById("to-do").value
 }
-
 function agregar() {
     if(!buscar()){
         nodo = document.createElement("li")
@@ -16,7 +13,6 @@ function agregar() {
         //window.alert("Error el elemento ya existe")
     }
 }
-
 function buscar() {
     band = false
     let listaToDo = document.getElementsByTagName("li")
@@ -55,3 +51,13 @@ function buscar() {
 //     }
 //     return band
 // }
+
+// function buscar(){
+//     listaTodo = document.getElementsByTagName("li")
+//     if(Object.hasOwnProperty.call(listaTodo, tarea)){
+//         if(leer() == listaTodo[tarea].childNodes[0],valueOf()){
+//             console.log("ya existe")
+//         }
+//     }
+// }
+
