@@ -1,1 +1,3 @@
 mvn archetype:generate -DgroupId=$1 -DartifactId=$2 -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
+
+curl -X POST -d "{id:'5',nombre:'Juanito',password:'789'}" -H 'Content-Type:application/json' http://localhost/usuarios

@@ -35,11 +35,11 @@ public class App
         get("/usuarios", (req, res) -> gson.toJson(usuarios));
 
 
-        post("/", (req, res) ->{
+        post("/usuarios", (req, res) ->{
             String datosFormulario =req.body();
             Usuario u = gson.fromJson(datosFormulario, Usuario.class);
             usuarios.put(u.getId(), u);
-            return null;
+            return "Usuario agregado";
         });
     }
 }
